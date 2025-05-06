@@ -74,6 +74,11 @@
         position: relative;
         /*color: #333;*/
         line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
       }
 
       body::after {
@@ -94,10 +99,10 @@
         justify-content: center;
         text-align: center;
         gap: 1rem;
-        height: 50vh;
+        width: 100%;
+        padding: 1.5rem 1rem;
         color: white;
         position: relative;
-        padding-top: 1.5rem;
       }
 
       header h1 {
@@ -134,18 +139,27 @@
       }
 
       section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         padding: 4rem 2rem;
       }
 
       .services {
-        max-width: 960px;
-        margin: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
         gap: 2rem;
+        max-width: 960px;
+        width: 100%;
       }
 
       .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
         background: #ffffffcc;
         border-radius: 1rem;
         padding: 2rem;
@@ -163,8 +177,13 @@
       }
 
       footer {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         padding: 2rem;
+        text-align: center;
         font-size: 0.9rem;
         color: #fff;
         background-color: transparent;
@@ -251,13 +270,14 @@
       <h2 style="text-align: center; margin-bottom: 2rem">צרו קשר</h2>
       <div
         style="
-          max-width: 700px;
+          max-width: 600px;
           margin: auto;
           background-color: #ffffffcc;
           padding: 2rem;
           border-radius: 1rem;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
           text-align: right;
+          width: 100%;
         "
       >
         <p><strong>אימייל:</strong> <a href="mailto:office@berkobot.com">office@berkobot.com</a></p>
@@ -274,7 +294,8 @@
       </div>
       <div
         style="
-          max-width: 700px;
+          max-width: 600px;
+          width: 100%;
           margin-top: 2rem;
           margin-left: auto;
           margin-right: auto;
@@ -317,7 +338,7 @@
     <footer>&copy; 2025 Berkobot. All rights reserved</footer>
 
     <a
-      href="https://wa.me/972505889194?text=%D7%94%D7%99!%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%A9%D7%AA%D7%A2%D7%A9%D7%94%20%D7%90%D7%AA%20%D7%94%D7%A7%D7%A1%D7%9E%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9A%20%D7%A2%D7%9D%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%95%D7%AA%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99"
+      href="https://wa.me/972505889194?text=%D7%94%D7%99%21%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%95%D7%AA%20%D7%9E%D7%95%D7%AA%D7%90%D7%9E%D7%95%D7%AA%20%D7%90%D7%99%D7%A9%D7%99%D7%AA%20%D7%A2%D7%91%D7%95%D7%A8%20%D7%94%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99"
       class="whatsapp-float"
       target="_blank"
       aria-label="צור קשר בוואטסאפ"
