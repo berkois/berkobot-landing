@@ -97,6 +97,7 @@
         height: 50vh;
         color: white;
         position: relative;
+        padding-top: 1.5rem;
       }
 
       header h1 {
@@ -209,7 +210,7 @@
       <img
         src="icon.png"
         alt="Berkobot Icon"
-        style="width: 3.75rem; height: 3.75rem"
+        style="width: 3.75rem; height: 3.75rem; object-fit: contain"
       />
       <h1>ברקובוט</h1>
       <p>אוטומציות שעושות קסמים</p>
@@ -331,7 +332,7 @@
       function sendWhatsAppMessage() {
         const message = document.getElementById("whatsappMessage").value;
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "972503456789"; // Replace with your number if needed
+        const phoneNumber = "972505889194";
         const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         window.open(url, "_blank");
       }
