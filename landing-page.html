@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html
+  lang="he"
+  dir="rtl"
+>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&ampdisplay=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Berkobot – Magic with Simple Automations</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Assistant", sans-serif;
+        background-image: url("background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        /*color: #333;*/
+        line-height: 1.6;
+      }
+
+      body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        z-index: -1;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50vh;
+        color: white;
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 5rem;
+        animation: floatIn 2s ease-out;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      header p {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+        animation: fadeIn 3s ease-out;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .cta {
+        margin-top: 2rem;
+        animation: fadeIn 4s ease-out;
+      }
+
+      .cta a {
+        background-color: #ffffffcc;
+        color: #ff4da6;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+
+      .cta a:hover {
+        background-color: white;
+        transform: scale(1.05);
+      }
+
+      section {
+        padding: 4rem 2rem;
+      }
+
+      .services {
+        max-width: 960px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .card {
+        background: #ffffffcc;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        color: #4b0082;
+        margin-bottom: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #fff;
+        background-color: transparent;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      @keyframes floatIn {
+        from {
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 999;
+        padding: 5px;
+        transition: transform 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ברקובוט</h1>
+      <p>אוטומציות שעושות קסמים</p>
+      <div class="cta">
+        <a href="#services">גלו את הקסם</a>
+      </div>
+      <div
+        class="cta"
+        style="margin-top: 3rem"
+      >
+        <a href="#contact">צור קשר</a>
+      </div>
+    </header>
+
+    <section id="services">
+      <h2 style="text-align: center; margin-bottom: 2rem">איך אנחנו עוזרים לעסק שלך</h2>
+      <div class="services">
+        <div class="card">
+          <h3>הסרת חסמים שפוגעים לך בעסק</h3>
+          <p>אנחנו מזהים ומבצעים אוטומציה של תהליכים חוזרים כדי לפנות לך זמן ולהגביר יעילות</p>
+        </div>
+        <div class="card">
+          <h3>חיבורים ללא קוד</h3>
+          <p>נחבר את הכלים שלך כמו וואטסאפ, קלנדלי, CRM ועוד — בלי לכתוב שורת קוד אחת</p>
+        </div>
+        <div class="card">
+          <h3>קליטת לקוחות קלה ומהירה</h3>
+          <p>החל מהודעה ראשונה ועד לתיאום – המסע כולו זורם בצורה אוטומטית ונעימה</p>
+        </div>
+        <div class="card">
+          <h3>הגדרה חד-פעמית</h3>
+          <p>פעם אחת מגדירים – ומאותו רגע הכול מתבצע אוטומטית בלי מאמץ חוזר</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 style="text-align: center; margin-bottom: 2rem">צור קשר</h2>
+      <div
+        style="
+          max-width: 700px;
+          margin: auto;
+          background-color: #ffffffcc;
+          padding: 2rem;
+          border-radius: 1rem;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+          text-align: right;
+        "
+      >
+        <p><strong>אימייל:</strong> <a href="mailto:office@berkobot.com">office@berkobot.com</a></p>
+        <p><strong>טלפון:</strong> <a href="tel:+972505889194">050-5889194</a></p>
+        <p>
+          <strong
+            ><a
+              href="https://wa.me/972505889194?text=%D7%94%D7%99!%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%A9%D7%AA%D7%A2%D7%A9%D7%94%20%D7%90%D7%AA%20%D7%94%D7%A7%D7%A1%D7%9E%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9A%20%D7%A2%D7%9D%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%95%D7%AA%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99"
+              >שלחו לנו ווטסאפ</a
+            ></strong
+          >
+        </p>
+        <p style="margin-top: 1rem">נשמח לשמוע ממך! שאלות, בקשות, שיתופי פעולה – דברו איתנו בכל נושא.</p>
+      </div>
+      <div
+        style="
+          max-width: 700px;
+          margin-top: 2rem;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #ffffffcc;
+          padding: 2rem;
+          border-radius: 1rem;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+          text-align: right;
+        "
+      >
+        <label
+          for="whatsappMessage"
+          style="display: block; margin-bottom: 0.5rem"
+          ><strong>כתוב לנו הודעה:</strong></label
+        >
+        <textarea
+          id="whatsappMessage"
+          rows="4"
+          style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; resize: vertical"
+        ></textarea>
+        <button
+          onclick="sendWhatsAppMessage()"
+          style="
+            margin-top: 1rem;
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-family: 'Assistant', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+          "
+        >
+          שלח לנו בוואטסאפ
+        </button>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Berkobot. All rights reserved.</footer>
+
+    <a
+      href="https://wa.me/972505889194?text=%D7%94%D7%99!%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%A9%D7%AA%D7%A2%D7%A9%D7%94%20%D7%90%D7%AA%20%D7%94%D7%A7%D7%A1%D7%9E%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9A%20%D7%A2%D7%9D%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%95%D7%AA%20%D7%9C%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="צור קשר בוואטסאפ"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        style="width: 100px; height: 100px"
+      />
+    </a>
+    <script>
+      function sendWhatsAppMessage() {
+        const message = document.getElementById("whatsappMessage").value;
+        const encodedMessage = encodeURIComponent(message);
+        const phoneNumber = "972503456789"; // Replace with your number if needed
+        const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
